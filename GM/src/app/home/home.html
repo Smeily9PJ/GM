@@ -1,0 +1,52 @@
+<div id="home" class="container-fluid">
+  <div class="parametre" (click)="openParam()"><i class="glyphicon glyphicon-wrench"></i></div>
+  <div class="notification" (click)="openNotif()"><i class="glyphicon glyphicon-envelope"></i></div>
+
+  <div class="menu">
+    <span class="communaute">
+      <i class="glyphicon glyphicon-globe" routerLink="/amis" (click)="MenuActif = 'Friends'"></i>
+    </span>
+    <span class="jdr">
+      <i class="glyphicon glyphicon-knight"></i>
+    </span>
+    <ul class="jdr-menu-deroulant">
+      <li>Créer un jdr</li>
+      <li>Mes JDR</li>
+      <li>Rejoindre un JDR</li>
+    </ul>
+  </div>
+
+  <!--<main-content *ngIf="MenuActif == 'HomeUser'"></main-content>-->
+  <friend-content *ngIf="MenuActif == 'Friends'"></friend-content>
+
+  <!--<div class="help">?</div>-->
+
+  <div class="bandeau">
+    <div class="login">Logué : <b>Joueur X</b></div>
+    <div class="version">Version : <b>0.0.0</b></div>
+  </div>
+</div>
+
+
+
+<div id="draggableNotif" class="block-notification ui-widget-content" *ngIf="ShowNotif">
+  <div><b>Quelques notif</b></div>
+  <div class="content">
+    <br />
+    <br />
+    <br />
+    <br />
+    Encore
+  </div>
+</div>
+
+<div id="draggableParam" class="block-notification ui-widget-content" *ngIf="ShowParam">
+  <div><b>Quelques param</b></div>
+  <div class="content">
+    <br />
+    <br />
+    <br />
+    <br />
+    Encore
+  </div>
+</div>

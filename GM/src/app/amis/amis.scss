@@ -1,0 +1,16 @@
+// fichier amis.scss
+@import "../../sass/variables.scss";
+
+#amis {
+  width: 99%;
+  height: 90%;
+  background-color: $color_main_2;
+  opacity: 0.5;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+
+  * {
+    opacity: 1;
+  }
+}

@@ -1,17 +1,16 @@
-// fichier app.component.scss
+// fichier home.scss
 @import "../../sass/variables.scss";
 @import "../../sass/global.scss";
 
-#app-component {
+#home {
   height: 100%;
   width: 100%;
 
 
-  .notification, .menu {
+  .notification, .parametre, .communaute, .jdr {
     z-index: 999;
     display: inline-block;
-    background-color: $color_main_1;
-    border-bottom: 2px solid $color_main_2;
+    background-color: $color_main_2;
     color: $color_main_5;
     width: 30px;
     height: 30px;
@@ -24,10 +23,9 @@
     }
   }
 
-  .menu {
+  .parametre {
     float: left;
     border-radius: 0 0 5px 0;
-    border-right: 2px solid $color_main_2;
 
     &:hover {
       box-shadow: 1px 1px 10px 0px $color_main_4;
@@ -37,14 +35,36 @@
   .notification {
     float: right;
     border-radius: 0 0 0 5px;
-    border-left: 2px solid $color_main_2;
 
     &:hover {
       box-shadow: -1px 1px 10px 0px $color_main_4;
     }
   }
 
-  .bandeau {
+  .menu {
+    width: 100%;
+    text-align: center;
+
+    & > span {
+      width: 50px;
+      height: 40px;
+      font-size: x-large;
+
+      &:hover {
+        box-shadow: 0px 1px 3px 0px $color_main_4;
+      }
+    }
+  }
+
+  .jdr-menu-deroulant {
+    position : fixed;
+    background-color: $color_main_2;
+    padding:5px;
+    margin: auto;
+  }
+
+
+    .bandeau {
     background-color: $color_main_2;
     height: 25px;
     bottom: 0px;
@@ -64,15 +84,15 @@
 
 .block-notification {
   z-index: 990;
-  position: absolute;
+  position:absolute;
   background-color: $color_main_2;
-  top: 0px;
+  top:0px;
   right: 0px;
   width: 150px;
   height: 150px;
 }
 
 main-content {
-  height: 100%;
-  width: 100%;
+  height:100%;
+  width:100%;
 }

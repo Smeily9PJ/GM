@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="src\app\app.routes.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="src\directive\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
@@ -19,5 +24,10 @@
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\app.routes.ts" />
   </ItemGroup>
 </Project>
