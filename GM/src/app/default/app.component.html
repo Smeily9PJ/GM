@@ -1,9 +1,43 @@
 <div id="app-component">
-  <div class="menu">
+  <div class="menu" *ngIf="!ShowMenu" (click)="ShowAndHideMenu()">
     <i class="glyphicon glyphicon-th-list"></i>
   </div>
-  <div class="notification">
+  <div class="menu menu-show" *ngIf="ShowMenu">
+    <p (click)="ShowAndHideMenu()" class="title-menu clickable">Menu <i class="glyphicon glyphicon-th-list"></i></p>
+    <ul class="niveau1">
+      <li class="clickable"><i class="glyphicon glyphicon-chevron-right"></i>Accueil</li>
+      <li>
+        JDR
+        <ul class="niveau2">
+          <li class="clickable"><i class="glyphicon glyphicon-chevron-right"></i>Mes JDRs</li>
+          <li class="clickable"><i class="glyphicon glyphicon-chevron-right"></i>Rejoindre un JDR</li>
+          <li class="clickable"><i class="glyphicon glyphicon-chevron-right"></i>Créer un JDR</li>
+        </ul>
+      </li>
+      <li>
+        Cummunauté
+        <ul class="niveau2">
+          <li class="clickable"><i class="glyphicon glyphicon-chevron-right"></i>Mes amis</li>
+          <li class="clickable"><i class="glyphicon glyphicon-chevron-right"></i>Ajouter un ami</li>
+        </ul>
+      </li>
+      <li class="clickable"><i class="glyphicon glyphicon-chevron-right"></i>Contact</li>
+    </ul>
+  </div>
+
+
+  <div class="notification" (click)="ShowAndHideNotif()">
     <i class="glyphicon glyphicon-envelope"></i>
+  </div>
+  <div class="notification notification-show" *ngIf="ShowNotification">
+    <p (click)="ShowAndHideNotif()" class="title-menu clickable"><i class="glyphicon glyphicon-envelope"></i> Notification</p>
+    <ul class="niveau1">
+      <li class="clickable">Messagerie</li>
+      <li class="clickable">Demande d'ami</li>
+      <li class="clickable">Invitation JDR</li>
+      <li class="clickable">Rejoindre JDR</li>
+      <li class="clickable">Vote pour une séance</li>
+    </ul>
   </div>
 
   <!--<sign></sign>-->
@@ -16,7 +50,7 @@
   </div>
 </div>
 
-<div id="draggableNotif" class="block-notification ui-widget-content" *ngIf="ShowNotif">
+<!--<div id="draggableNotif" class="block-notification ui-widget-content" *ngIf="ShowNotif">
   <div><b>Quelques notif</b></div>
   <div class="content">
     <br />
@@ -25,4 +59,4 @@
     <br />
     Encore
   </div>
-</div>
+</div>-->

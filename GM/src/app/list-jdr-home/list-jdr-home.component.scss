@@ -1,0 +1,59 @@
+// fichier list-jdr-home.component.scss
+@import "../../sass/variables.scss";
+@import "../../sass/global.scss";
+
+.liste-jdr-home {
+  h3 {
+    margin-left: 30px;
+  }
+
+  .row {
+    margin: 0px;
+  }
+
+  .jdr {
+    margin: 5px;
+    padding: 5px;
+    background-color: $color_main_2;
+    color: $color_main_5;
+
+    .mj {
+      font-style: italic;
+      font-size: 12px;
+    }
+
+    .nom-jdr {
+      font-weight: bold;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .icons-jdr {
+      height: 25px;
+      text-align:center;
+
+      button {
+        display: inline-block;
+        padding: 0 5px;
+        background-color: $color_main_5;
+        color: $color_main_2;
+        border-color: $color_main_5;
+      }
+    }
+  }
+
+  .jdr-mj {
+    background-color: $color_main_5;
+    color: $color_main_2;
+
+    .icons-jdr {
+      button {
+        display: inline-block;
+        padding: 0 5px;
+        background-color: $color_main_2;
+        color: $color_main_5;
+        border-color: $color_main_2;
+      }
+    }
+  }
+}
