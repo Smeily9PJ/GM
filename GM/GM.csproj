@@ -8,6 +8,26 @@
 
   <ItemGroup>
     <None Remove="src\app\app.routes.ts" />
+    <None Remove="src\app\dto\elementFiche.ts" />
+    <None Remove="src\app\dto\fiche.ts" />
+    <None Remove="src\app\dto\friend.ts" />
+    <None Remove="src\app\dto\jeuDeRole.ts" />
+    <None Remove="src\app\dto\participeJDR.ts" />
+    <None Remove="src\app\dto\participeSeance.ts" />
+    <None Remove="src\app\dto\refEtatJDR.ts" />
+    <None Remove="src\app\dto\seance.ts" />
+    <None Remove="src\app\dto\typeElementFiche.ts" />
+    <None Remove="src\app\dto\user.ts" />
+    <None Remove="src\app\mock\elementFiche.mock.ts" />
+    <None Remove="src\app\mock\fiche.mock.ts" />
+    <None Remove="src\app\mock\friend.mock.ts" />
+    <None Remove="src\app\mock\jeuDeRole.mock.ts" />
+    <None Remove="src\app\mock\participeJDR.mock.ts" />
+    <None Remove="src\app\mock\participeSeance.mock.ts" />
+    <None Remove="src\app\mock\refEtatJDR.mock.ts" />
+    <None Remove="src\app\mock\seance.mock.ts" />
+    <None Remove="src\app\mock\typeElementFiche.mock.ts" />
+    <None Remove="src\app\mock\user.mock.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,5 +49,25 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="src\app\app.routes.ts" />
+    <TypeScriptCompile Include="src\app\dto\elementFiche.ts" />
+    <TypeScriptCompile Include="src\app\dto\fiche.ts" />
+    <TypeScriptCompile Include="src\app\dto\friend.ts" />
+    <TypeScriptCompile Include="src\app\dto\jeuDeRole.ts" />
+    <TypeScriptCompile Include="src\app\dto\participeJDR.ts" />
+    <TypeScriptCompile Include="src\app\dto\participeSeance.ts" />
+    <TypeScriptCompile Include="src\app\dto\refEtatJDR.ts" />
+    <TypeScriptCompile Include="src\app\dto\seance.ts" />
+    <TypeScriptCompile Include="src\app\dto\typeElementFiche.ts" />
+    <TypeScriptCompile Include="src\app\dto\user.ts" />
+    <TypeScriptCompile Include="src\app\mock\elementFiche.mock.ts" />
+    <TypeScriptCompile Include="src\app\mock\fiche.mock.ts" />
+    <TypeScriptCompile Include="src\app\mock\friend.mock.ts" />
+    <TypeScriptCompile Include="src\app\mock\jeuDeRole.mock.ts" />
+    <TypeScriptCompile Include="src\app\mock\participeJDR.mock.ts" />
+    <TypeScriptCompile Include="src\app\mock\participeSeance.mock.ts" />
+    <TypeScriptCompile Include="src\app\mock\refEtatJDR.mock.ts" />
+    <TypeScriptCompile Include="src\app\mock\seance.mock.ts" />
+    <TypeScriptCompile Include="src\app\mock\typeElementFiche.mock.ts" />
+    <TypeScriptCompile Include="src\app\mock\user.mock.ts" />
   </ItemGroup>
 </Project>
