@@ -1,0 +1,11 @@
+https://nodejs.org/en/    node js
+https://www.microsoft.com/net/learn/get-started/windows#windowscmd  .NET SDK
+https://www.microsoft.com/fr-fr/download/details.aspx?id=15354   Kit de développement Microsoft .NET Framework 2.0 SDK (x64)
+install python27
+
+npm install --global --production windows-build-tools
+
+npm install
+
+npm install @angular/cli --global
+

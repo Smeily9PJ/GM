@@ -1,9 +1,10 @@
 
 import { RefEtatJDR } from './refEtatJDR';
+import { User } from './user';
 
 export class JeuDeRole {
   IdJDR: number;
-  IdMJ: number;
+  MJ: User;
   NomJDR: string;
   Etat: RefEtatJDR;
   DateCreation: Date;

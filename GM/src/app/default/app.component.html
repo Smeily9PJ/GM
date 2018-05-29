@@ -5,11 +5,11 @@
   <div class="menu menu-show" *ngIf="ShowMenu">
     <p (click)="ShowAndHideMenu()" class="title-menu clickable">Menu <i class="glyphicon glyphicon-th-list"></i></p>
     <ul class="niveau1">
-      <li class="clickable"><i class="glyphicon glyphicon-chevron-right"></i>Accueil</li>
+      <li class="clickable" (click)="menu = 'list-jdr-home'"><i class="glyphicon glyphicon-chevron-right"></i>Accueil</li>
       <li>
         JDR
         <ul class="niveau2">
-          <li class="clickable"><i class="glyphicon glyphicon-chevron-right"></i>Mes JDRs</li>
+          <li class="clickable" (click)="menu = 'mes-jdr'"><i class="glyphicon glyphicon-chevron-right"></i>Mes JDRs</li>
           <li class="clickable"><i class="glyphicon glyphicon-chevron-right"></i>Rejoindre un JDR</li>
           <li class="clickable"><i class="glyphicon glyphicon-chevron-right"></i>Créer un JDR</li>
         </ul>
@@ -42,10 +42,17 @@
 
   <!--<sign></sign>-->
 
-  <app-list-jdr-home></app-list-jdr-home>
+  <app-list-jdr-home [user]="userSelect" *ngIf="menu == 'list-jdr-home'"></app-list-jdr-home>
+  <app-mes-jdr [user]="userSelect" *ngIf="menu == 'mes-jdr'"></app-mes-jdr>
+  <app-detail-jdr  *ngIf="menu == 'detail-jdr'"></app-detail-jdr>
 
   <div class="bandeau">
-    <div class="login">Logué : <b>Joueur X</b></div>
+    <div class="login">
+      Logué :
+      <select class="form-control input-sm" [(ngModel)]="userSelect">
+        <option *ngFor="let us of utilisateurs" [ngValue]="us">{{us.Pseudo}}</option>
+      </select>
+    </div>
     <div class="version">Version : <b>0.0.0</b></div>
   </div>
 </div>

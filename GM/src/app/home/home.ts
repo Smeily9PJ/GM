@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 
+import { User } from '../dto/user';
+
+import { USERS } from '../mock/user.mock';
+
 declare var $: any;
 
 @Component({
@@ -12,6 +16,8 @@ export class Home implements OnInit {
   private ShowNotif: boolean = false;
   private ShowParam: boolean = false;
   private MenuActif: string = "HomeUser";
+
+  private connecte: User = USERS[0];
 
 
   constructor(private _httpService: Http) {

@@ -4,7 +4,7 @@ import { JeuDeRole } from '../dto/jeuDeRole';
 export const JDRS: JeuDeRole[] = [
   {
     IdJDR: 1,
-    IdMJ: 1,
+    MJ: { IdUser: 1, Pseudo: "tartufle" },
     NomJDR: "Les mondes oubliés",
     Etat: {
       CodeEtat: "FINI",
@@ -22,7 +22,7 @@ export const JDRS: JeuDeRole[] = [
   },
   {
     IdJDR: 2,
-    IdMJ: 1,
+    MJ: { IdUser: 1, Pseudo: "tartufle" },
     NomJDR: "Un lointain souvenir",
     Etat: {
       CodeEtat: "EN COURS",
@@ -40,7 +40,7 @@ export const JDRS: JeuDeRole[] = [
   },
   {
     IdJDR: 3,
-    IdMJ: 2,
+    MJ: { IdUser: 2, Pseudo: "loli" },
     NomJDR: "Brocken road",
     Etat: {
       CodeEtat: "EN COURS",
@@ -58,7 +58,7 @@ export const JDRS: JeuDeRole[] = [
   },
   {
     IdJDR: 4,
-    IdMJ: 2,
+    MJ: { IdUser: 2, Pseudo: "loli" },
     NomJDR: "EH oh ehoh on rentre du boulot",
     Etat: {
       CodeEtat: "EN PAUSE",
@@ -76,7 +76,7 @@ export const JDRS: JeuDeRole[] = [
   },
   {
     IdJDR: 5,
-    IdMJ: 2,
+    MJ: { IdUser: 2, Pseudo: "loli" },
     NomJDR: "Une omelette de dragon",
     Etat: {
       CodeEtat: "ARRETE",
